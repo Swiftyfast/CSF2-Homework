@@ -16,6 +16,18 @@ namespace TesterProgram
             ferdinand.FirstName = "Franz";
 
             Console.WriteLine(ferdinand);
+
+            Vehicle falcon = new Vehicle("Corellian Corvette", "YT-1300", 5, 30000);
+
+            Console.WriteLine(falcon);
+
+            Login myActualLogin = new Login("myName", "12345");
+
+            Console.WriteLine(myActualLogin);
+
+            ContactInfo myInfo = new ContactInfo("3180 Main Street", "Kansas City", "KS", "45825", "913-555-5885", "email@email.com");
+
+            Console.WriteLine(myInfo);
         }
     }
 }
