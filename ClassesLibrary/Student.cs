@@ -53,11 +53,13 @@ namespace ClassesLibrary
         public Student() { }
 
         //*****************************
-        
+
         public override string ToString()
         {
-            return string.Format(FirstName + " " + LastName + " has a student id of " + Id + " and a GPA of " + Gpa + "."); 
+            return string.Format(FirstName + " " + LastName + " has a student id of " + Id + " and a GPA of " + Gpa + ".");
         }
+
+
 
     }
 }

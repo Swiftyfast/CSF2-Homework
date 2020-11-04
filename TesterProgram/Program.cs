@@ -58,8 +58,23 @@ namespace TesterProgram
             newAddress.Phone = "816-555-4000";
             newAddress.Email = "notADoctor@email.com";
 
-            Console.WriteLine(myInfo);
-            Console.WriteLine(newAddress);
+            //Console.WriteLine(myInfo);
+            //Console.WriteLine(newAddress);
+
+            //********
+
+            Customer doorBuster = new Customer("789", "Upton", "Sinclar", myInfo);
+
+            Customer carlSagan = new Customer();
+            carlSagan.CustomerId = "790";
+            carlSagan.FirstName = "Carl";
+            carlSagan.LastName = "Sagan";
+            carlSagan.ContactInformation = newAddress;
+
+            Console.WriteLine("\n");
+            Console.WriteLine(doorBuster);
+            Console.WriteLine("\n");
+            Console.WriteLine(carlSagan);
         }
     }
 }
