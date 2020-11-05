@@ -106,6 +106,28 @@ namespace TesterProgram
             Console.WriteLine("\n");
             Console.WriteLine(lotr);
 
+            //*************
+
+            List<Book> myBooks = new List<Book>();
+            myBooks.Add(lotr);
+            myBooks.Add(frankenstein);
+
+            Library shawneePublicLibrary = new Library(myBooks, "Shawnee Public Library", "400 E. Shawnee Mission Parkway", "Shawnee", "KS", "74147");
+
+            Library myPersonalBookshelf = new Library();
+            myPersonalBookshelf.Books = myBooks;
+            myPersonalBookshelf.City = "Kansas City";
+            myPersonalBookshelf.LibraryName = "My personal book collection";
+            myPersonalBookshelf.State = "MO";
+            myPersonalBookshelf.Zip = "99999";
+            myPersonalBookshelf.StreetAddress = "700 31st Street";
+
+            Console.WriteLine("\n");
+            Console.WriteLine(shawneePublicLibrary);
+            Console.WriteLine("\n");
+            Console.WriteLine(myPersonalBookshelf);
+
+
         }
     }
 }
