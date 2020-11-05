@@ -92,6 +92,20 @@ namespace TesterProgram
             Console.WriteLine("\n");
             Console.WriteLine(account2);
 
+            //***********
+
+            Book frankenstein = new Book("Frankenstein", "Mary Shelly", 300);
+
+            Book lotr = new Book();
+            lotr.Title = "Lord of the Rings";
+            lotr.Author = "J.R.R. Tolkein";
+            lotr.NumberOfPages = 1200;
+
+            Console.WriteLine("\n");
+            Console.WriteLine(frankenstein);
+            Console.WriteLine("\n");
+            Console.WriteLine(lotr);
+
         }
     }
 }
