@@ -75,6 +75,23 @@ namespace TesterProgram
             Console.WriteLine(doorBuster);
             Console.WriteLine("\n");
             Console.WriteLine(carlSagan);
+
+            //*************
+
+            CreditCardAccount account1 = new CreditCardAccount(1700, doorBuster, 7256.3m, false, .1m);
+
+            CreditCardAccount account2 = new CreditCardAccount();
+            account2.AccountNumber = 1701;
+            account2.AnnualInterestRate = .05m;
+            account2.Balance = 304.12m;
+            account2.CustomerInfo = carlSagan;
+            account2.IsPastDue = false;
+
+            Console.WriteLine("\n");
+            Console.WriteLine(account1);
+            Console.WriteLine("\n");
+            Console.WriteLine(account2);
+
         }
     }
 }
