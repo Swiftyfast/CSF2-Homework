@@ -146,6 +146,22 @@ namespace TesterProgram
             Console.WriteLine(immigrantSong);
             Console.WriteLine("\n");
             Console.WriteLine(holdYouNow);
+
+            //*****************
+
+            Song stairway = new Song("Led Zepplin", "Stairway to heaven", 400);
+            Song jnyb = new Song("Vampire Weekend", "Jerusalem, New York, Berlin", 181);
+
+            Song[] lz = { immigrantSong, stairway };
+            Song[] vw = { holdYouNow, jnyb };
+
+            Artist ledZeppHits = new Artist(lz, "Led Zepplin Greatest Hits", "Rock");
+            Artist vampWeekend = new Artist(vw, "Vampire Weekend Presents", "Alt-Rock");
+
+            Console.WriteLine("\n");
+            Console.WriteLine(ledZeppHits);
+            Console.WriteLine(vampWeekend);
+
         }
     }
 }
