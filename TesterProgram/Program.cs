@@ -162,6 +162,35 @@ namespace TesterProgram
             Console.WriteLine(ledZeppHits);
             Console.WriteLine(vampWeekend);
 
+            //************
+
+            MotorHome winabango = new MotorHome("Winabango", "S-7", 1989, 4000, 3);
+            MotorHome modifiedBus = new MotorHome();
+            modifiedBus.Make = "School Bus";
+            modifiedBus.Model = "modified by owner";
+            modifiedBus.Year = 2000;
+            modifiedBus.Weight = 8000;
+            modifiedBus.NumberOfBeds = 6;
+
+            Console.WriteLine("\n");
+            Console.WriteLine(winabango);
+            Console.WriteLine("\n");
+            Console.WriteLine(modifiedBus);
+
+            //************
+
+            Truck fjordTough = new Truck("Ford", "F-150", 2003, 1500, 3500f);
+            Truck scottsDadsTruck = new Truck();
+            scottsDadsTruck.Make = "Chevy";
+            scottsDadsTruck.Model = "S10";
+            scottsDadsTruck.Year = 1988;
+            scottsDadsTruck.Weight = 1200;
+            scottsDadsTruck.LoadCapacityLbs = 2000f;
+
+            Console.WriteLine("\n");
+            Console.WriteLine(fjordTough);
+            Console.WriteLine("\n");
+            Console.WriteLine(scottsDadsTruck);
         }
     }
 }
