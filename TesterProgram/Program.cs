@@ -96,6 +96,10 @@ namespace TesterProgram
 
             Book frankenstein = new Book("Frankenstein", "Mary Shelly", 300);
 
+            Book foreverWar = new Book("The Forever War", "Joe Haldman", 320);
+
+            Book fourteenNinetyOne = new Book("1491", "Charles C. Mann", 400);
+
             Book lotr = new Book();
             lotr.Title = "Lord of the Rings";
             lotr.Author = "J.R.R. Tolkein";
@@ -111,6 +115,8 @@ namespace TesterProgram
             List<Book> myBooks = new List<Book>();
             myBooks.Add(lotr);
             myBooks.Add(frankenstein);
+            myBooks.Add(fourteenNinetyOne);
+            myBooks.Add(foreverWar);
 
             Library shawneePublicLibrary = new Library(myBooks, "Shawnee Public Library", "400 E. Shawnee Mission Parkway", "Shawnee", "KS", "74147");
 
@@ -127,7 +133,19 @@ namespace TesterProgram
             Console.WriteLine("\n");
             Console.WriteLine(myPersonalBookshelf);
 
+            //*****************
 
+            Song immigrantSong = new Song("Led Zepplin", "Immigrant Song", 190);
+
+            Song holdYouNow = new Song();
+            holdYouNow.Artist = "Vampire Weekend";
+            holdYouNow.Title = "Hold you now";
+            holdYouNow.LengthInSeconds = 140;
+
+            Console.WriteLine("\n");
+            Console.WriteLine(immigrantSong);
+            Console.WriteLine("\n");
+            Console.WriteLine(holdYouNow);
         }
     }
 }
